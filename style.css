@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #182931;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 90vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 55vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    width: 50vmin;
+    height: 50vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+}
+.box{
+    height: 15vmin;
+    width: 15vmin;
+    border-radius: 1.2vw;
+    border: none;
+    outline: none;
+    font-size: 3.2vw;
+    font-weight: 700;
+    cursor: pointer;
+    color: #858585;
+    background: #090b1d;
+    box-shadow: 2px 5px 4px #000,
+    inset 2px 2px 3px #5c5a5a;
+}
+.new-game{
+    padding-top: 5vw;
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+}
+.top-h3{
+    color: #4fa7aa;
+    font-weight: 900;
+    font-size: 2.6vw;
+    padding-top: 1vh;
+}
+.icon{
+    padding-top: 2vh;
+}
+#new-btn{
+    padding: 8px;
+    font-size: 1.5vw;
+    font-weight: 600;
+    background: black;
+    color: red;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#new-btn:hover{
+    background: #ccc;
+    border: 2px solid #ccc;
+    color: #000;
+    transition: 0.4s ease;
+}
+#msg{
+    color: #fff;
+    padding-top: 1.5vw;
+    font-weight: 600;
+    font-size: 2.3vw;
+}
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{
+    display: none;
+}
+@media(max-width : 850px){
+    
+    #new-btn{
+        font-size: 2vw;
+    }
+    .box{
+        font-size: 6vw;
+    }
+    #msg{
+        font-size: 4vw;
+    }
+}
+@media(max-width : 500px){
+    h1{
+        font-size: 8vw;
+    }
+    .box{
+        font-size: 7vw;
+    }
+    #new-btn{
+        font-size: 3.5vw;
+    }
+    #msg{
+        font-size: 6vw;
+    }
+    .new-button{
+        padding-top: 4vw;
+    }
+}
